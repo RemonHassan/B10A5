@@ -19,14 +19,148 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "rgb(180, 244, 97)",
+              background: "rgb(30, 30, 30)",
+            },
+          },
+        },
+      };
+    </script>
     <style>
       .lexend-font {
         font-family: "Lexend", sans-serif;
       }
     </style>
   </head>
-  <body class="lexend-font">
-    <head> </head>
-    <main></main>
+  <body class="lexend-font px-28 py-12">
+    <header class="bg-background">
+      <div class="navbar bg-base-100 flex justify-between">
+        <button class="btn bg-primary font-semibold">Blogs</button>
+        <a class="btn btn-ghost text-xl font-semibold"
+          ><img src="assets/logo.png" alt="" /> Donate Bangladesh</a
+        >
+        <p>
+          <img src="assets/coin.png" alt="" /><span> 0</span><span>BDT</span>
+        </p>
+      </div>
+    </header>
+    <main class="mt-10">
+      <section>
+        <div class="flex justify-center items-center gap-5">
+          <button class="btn bg-primary font-medium">Donation</button>
+          <button class="btn bg-primary font-medium">History</button>
+        </div>
+        <!-- card section start -->
+        <div class="mt-10 space-y-5">
+          <!-- card-1 -->
+          <div class="p-5 grid grid-cols-2 border rounded-lg">
+            <div class="col-span-1">
+              <img src="assets/noakhali.png" alt="" />
+            </div>
+            <div class="col-span-1 space-y-4">
+              <div class="p-2 rounded-md w-28 bg-slate-200">
+                <div class="flex space-x-3">
+                  <img src="assets/coin.png" alt="" /><span>0</span
+                  ><span>BDT</span>
+                </div>
+              </div>
+              <h3 class="font-bold">
+                Donate for Flood at Noakhali, Bangladesh
+              </h3>
+              <p class="font-light">
+                The recent floods in Noakhali have caused significant damage to
+                homes infrastructure. Your donation will help provide essential
+                supplies and to those affected by this disaster. Every
+                contribution, big or small, makes difference. Please join us in
+                supporting the relief efforts and making a positive impact on
+                the lives of those in need.
+              </p>
+              <label class="form-control w-full">
+                <input
+                  type="number"
+                  placeholder="Write Donation Amount"
+                  class="input input-bordered w-full"
+                />
+              </label>
+              <button class="btn bg-primary w-full">Donate</button>
+            </div>
+          </div>
+          <!-- card-2 -->
+          <div class="p-5 grid grid-cols-2 border rounded-lg">
+            <div class="col-span-1">
+              <img src="assets/feni.png" alt="" />
+            </div>
+            <div class="col-span-1 space-y-4">
+              <div class="p-2 rounded-md w-28 bg-slate-200">
+                <div class="flex space-x-3">
+                  <img src="assets/coin.png" alt="" /><span>0</span
+                  ><span>BDT</span>
+                </div>
+              </div>
+              <h3 class="font-bold">Aid for Injured in the Quota Movement</h3>
+              <p class="font-light">
+                The recent floods in Feni have devastated local communities,
+                leading to severe disruption and loss. Your generous donation
+                will help provide immediate aid, including food, clean water,
+                and medical supplies, to those affected by this calamity.
+                Together, we can offer crucial support and help rebuild lives in
+                the aftermath of this disaster. Every contribution counts
+                towards making a real difference. Please consider donating today
+                to assist those in urgent need.
+              </p>
+              <label class="form-control w-full">
+                <input
+                  type="number"
+                  placeholder="Write Donation Amount"
+                  class="input input-bordered w-full"
+                />
+              </label>
+              <button class="btn bg-primary w-full">Donate</button>
+            </div>
+          </div>
+          <!-- card-3 -->
+          <div class="p-5 grid grid-cols-2 border rounded-lg">
+            <div class="col-span-1">
+              <img src="assets/quota-protest.png" alt="" />
+            </div>
+            <div class="col-span-1 space-y-4">
+              <div class="p-2 rounded-md w-28 bg-slate-200">
+                <div class="flex space-x-3">
+                  <img src="assets/coin.png" alt="" /><span>0</span
+                  ><span>BDT</span>
+                </div>
+              </div>
+              <h3 class="font-bold">Aid for Injured in the Quota Movement</h3>
+              <p class="font-light">
+                The recent Quota movement has resulted in numerous injuries and
+                significant hardship for many individuals. Your support is
+                crucial in providing medical assistance, rehabilitation, and
+                necessary supplies to those affected. By contributing, you help
+                ensure that injured individuals receive the care and support
+                they need during this challenging time. Every donation plays a
+                vital role in alleviating their suffering and aiding in their
+                recovery. Please consider making a donation to support these
+                brave individuals in their time of need.
+              </p>
+              <label class="form-control w-full">
+                <input
+                  type="number"
+                  placeholder="Write Donation Amount"
+                  class="input input-bordered w-full"
+                />
+              </label>
+              <button class="btn bg-primary w-full">Donate</button>
+            </div>
+          </div>
+        </div>
+        <!-- card section ends -->
+      </section>
+    </main>
   </body>
 </html>
