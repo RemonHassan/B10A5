@@ -38,35 +38,35 @@
       }
     </style>
   </head>
-  <body class="lexend-font px-28 py-12">
-    <header class="bg-background">
+  <body class="lexend-font px-10 py-2 lg:px-28 lg:py-12">
+    <header class="sticky top-0 z-50 bg-white">
       <div class="navbar bg-base-100 flex justify-between">
         <button class="btn bg-primary font-semibold">Blogs</button>
-        <a class="btn btn-ghost text-xl font-semibold"
+        <a class="btn btn-ghost text-xl font-semibold hidden lg:flex"
           ><img src="assets/logo.png" alt="" /> Donate Bangladesh</a
         >
         <p>
-          <img src="assets/coin.png" alt="" /><span> 0</span><span>BDT</span>
+          <img src="assets/coin.png" alt="" /><span> 5500</span><span>BDT</span>
         </p>
+      </div>
+      <div class="flex justify-center items-center gap-5 mt-7 mb-4">
+        <button class="btn bg-primary font-semibold">Donation</button>
+        <button class="btn font-semibold">History</button>
       </div>
     </header>
     <main class="mt-10">
       <section>
-        <div class="flex justify-center items-center gap-5">
-          <button class="btn bg-primary font-medium">Donation</button>
-          <button class="btn bg-primary font-medium">History</button>
-        </div>
         <!-- card section start -->
         <div class="mt-10 space-y-5">
           <!-- card-1 -->
-          <div class="p-5 grid grid-cols-2 border rounded-lg">
+          <div class="p-5 grid grid-cols-1 lg:grid-cols-2 border rounded-lg">
             <div class="col-span-1">
               <img src="assets/noakhali.png" alt="" />
             </div>
             <div class="col-span-1 space-y-4">
-              <div class="p-2 rounded-md w-28 bg-slate-200">
+              <div class="p-2 rounded-md w-36 bg-slate-200">
                 <div class="flex space-x-3">
-                  <img src="assets/coin.png" alt="" /><span>0</span
+                  <img src="assets/coin.png" alt="" /><span>10000</span
                   ><span>BDT</span>
                 </div>
               </div>
@@ -88,18 +88,37 @@
                   class="input input-bordered w-full"
                 />
               </label>
-              <button class="btn bg-primary w-full">Donate</button>
+              <button
+                onclick="my_modal_1.showModal()"
+                class="btn bg-primary w-full"
+              >
+                Donate
+              </button>
+              <dialog id="my_modal_1" class="modal">
+                <div class="modal-box text-center space-y-3">
+                  <h3 class="text-lg font-extrabold">Congrats!</h3>
+                  <img class="mx-auto" src="assets/coin.png" alt="" />
+                  <p class="py-4">You Have Donated for Humankind</p>
+                  <h3 class="text-sm font-bold">Successfully</h3>
+                  <div class="modal-action">
+                    <form method="dialog" class="mx-auto">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn bg-primary">Close confirmation</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
             </div>
           </div>
           <!-- card-2 -->
-          <div class="p-5 grid grid-cols-2 border rounded-lg">
+          <div class="p-5 grid grid-cols-1 lg:grid-cols-2 border rounded-lg">
             <div class="col-span-1">
               <img src="assets/feni.png" alt="" />
             </div>
             <div class="col-span-1 space-y-4">
-              <div class="p-2 rounded-md w-28 bg-slate-200">
+              <div class="p-2 rounded-md w-36 bg-slate-200">
                 <div class="flex space-x-3">
-                  <img src="assets/coin.png" alt="" /><span>0</span
+                  <img src="assets/coin.png" alt="" /><span>10200</span
                   ><span>BDT</span>
                 </div>
               </div>
@@ -121,18 +140,37 @@
                   class="input input-bordered w-full"
                 />
               </label>
-              <button class="btn bg-primary w-full">Donate</button>
+              <button
+                onclick="my_modal_2.showModal()"
+                class="btn bg-primary w-full"
+              >
+                Donate
+              </button>
+              <dialog id="my_modal_2" class="modal">
+                <div class="modal-box text-center space-y-3">
+                  <h3 class="text-lg font-extrabold">Congrats!</h3>
+                  <img class="mx-auto" src="assets/coin.png" alt="" />
+                  <p class="py-4">You Have Donated for Humankind</p>
+                  <h3 class="text-sm font-bold">Successfully</h3>
+                  <div class="modal-action">
+                    <form method="dialog" class="mx-auto">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn bg-primary">Close confirmation</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
             </div>
           </div>
           <!-- card-3 -->
-          <div class="p-5 grid grid-cols-2 border rounded-lg">
+          <div class="p-5 grid grid-cols-1 lg:grid-cols-2 border rounded-lg">
             <div class="col-span-1">
               <img src="assets/quota-protest.png" alt="" />
             </div>
             <div class="col-span-1 space-y-4">
-              <div class="p-2 rounded-md w-28 bg-slate-200">
+              <div class="p-2 rounded-md w-36 bg-slate-200">
                 <div class="flex space-x-3">
-                  <img src="assets/coin.png" alt="" /><span>0</span
+                  <img src="assets/coin.png" alt="" /><span>10030</span
                   ><span>BDT</span>
                 </div>
               </div>
@@ -155,11 +193,36 @@
                   class="input input-bordered w-full"
                 />
               </label>
-              <button class="btn bg-primary w-full">Donate</button>
+              <button
+                onclick="my_modal_3.showModal()"
+                class="btn bg-primary w-full"
+              >
+                Donate
+              </button>
+              <dialog id="my_modal_3" class="modal">
+                <div class="modal-box text-center space-y-3">
+                  <h3 class="text-lg font-extrabold">Congrats!</h3>
+                  <img class="mx-auto" src="assets/coin.png" alt="" />
+                  <p class="py-4">You Have Donated for Humankind</p>
+                  <h3 class="text-sm font-bold">Successfully</h3>
+                  <div class="modal-action">
+                    <form method="dialog" class="mx-auto">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn bg-primary">Close confirmation</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
             </div>
           </div>
         </div>
         <!-- card section ends -->
+
+        <!-- history section start -->
+        <div class="hidden">
+          <h2>History</h2>
+        </div>
+        <!-- history section ends -->
       </section>
     </main>
   </body>
