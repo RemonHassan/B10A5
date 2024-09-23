@@ -53,10 +53,16 @@
         </p>
       </div>
       <div class="flex justify-center items-center gap-5 mt-7 mb-4">
-        <button onclick="showBtn()" class="btn bg-primary font-semibold">
+        <button
+          id="btn-donation"
+          onclick="showBtn()"
+          class="btn bg-primary font-semibold"
+        >
           Donation
         </button>
-        <button onclick="showBtn2()" class="btn font-semibold">History</button>
+        <button id="btn-history" onclick="showBtn2()" class="btn font-semibold">
+          History
+        </button>
       </div>
     </header>
     <main class="mt-10">
@@ -181,7 +187,8 @@
             <div class="col-span-1 space-y-4">
               <div class="p-2 rounded-md w-36 bg-slate-200">
                 <div class="flex space-x-3">
-                  <img src="assets/coin.png" alt="" /><span>10030</span
+                  <img src="assets/coin.png" alt="" /><span id="quota"
+                    >10030</span
                   ><span>BDT</span>
                 </div>
               </div>
@@ -199,12 +206,14 @@
               </p>
               <label class="form-control w-full">
                 <input
+                  id="input-field-card-3"
                   type="number"
                   placeholder="Write Donation Amount"
                   class="input input-bordered w-full"
                 />
               </label>
               <button
+                id="input-card-3"
                 onclick="my_modal_3.showModal()"
                 class="btn bg-primary w-full"
               >
@@ -230,7 +239,7 @@
         <!-- card section ends -->
 
         <!-- history section start -->
-        <div id="history-section" class="hidden">
+        <div id="history-section" class="hidden items-center text-center">
           <h2>Donation History</h2>
           <div id="donation-history"></div>
         </div>
