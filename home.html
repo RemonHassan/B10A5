@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <!-- google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Lexend -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- daisy Ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "rgb(180, 244, 97)",
+              background: "rgb(30, 30, 30)",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .lexend-font {
+        font-family: "Lexend", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="lexend-font px-10 py-2 lg:px-28 lg:py-12">
+    <header class="sticky top-0 z-50 bg-white">
+      <div class="navbar bg-base-100 flex justify-between">
+        <button class="btn bg-primary font-semibold">
+          <a href="./index.html">Home</a>
+        </button>
+        <a class="btn btn-ghost text-xl font-semibold hidden lg:flex"
+          ><img src="assets/logo.png" alt="" /> Donate Bangladesh</a
+        >
+        <p>
+          <img src="assets/coin.png" alt="" /><span> 5500</span><span>BDT</span>
+        </p>
+      </div>
+    </header>
+  </body>
+</html>
