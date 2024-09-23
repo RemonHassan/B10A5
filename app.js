@@ -30,7 +30,36 @@ document.getElementById('input-card-1').addEventListener('click',function(){
       historyEntry.classList.add('rounded-md');
       historyEntry.classList.add('mt-3');
       historyEntry.innerHTML = `
-      <p class="text-center font-bold">${inputField1} Taka is donated for famine-2024 at Feni, Bangladesh </p>
+      <p class="text-center font-bold">${inputField1} Taka is donated for famine-2024 at noakhali, Bangladesh </p>
+      <p class="text-center font-bold">Date: ${now}</p>
+  `;
+  document.getElementById('donation-history').appendChild(historyEntry);
+
+   }
+})
+// *********feni*********
+document.getElementById('input-card-2').addEventListener('click',function(){
+
+   const  inputField22 = parseFloat(document.getElementById('input-field-card-2').value);
+   const mainBalance = parseFloat(document.getElementById('main-balance').innerText);
+   const feniMoney = parseFloat(document.getElementById('feni').innerText);
+   if( inputField22 > mainBalance){
+      alert('Not Enough Balance');
+      return ;
+   }
+   else{
+         const newBalance = mainBalance - inputField22;
+      document.getElementById('main-balance').innerText = newBalance;
+      const feniBalance = feniMoney + inputField22;
+      document.getElementById('feni').innerText = feniBalance;
+      const now = new Date().toLocaleString('en-GB', { timeZone: 'Asia/Dhaka' });
+      const historyEntry = document.createElement('div');
+      historyEntry.className = 'history-entry';
+      historyEntry.classList.add('border');
+      historyEntry.classList.add('rounded-md');
+      historyEntry.classList.add('mt-3');
+      historyEntry.innerHTML = `
+      <p class="text-center font-bold">${ inputField22} Taka is donated for famine-2024 at Feni, Bangladesh </p>
       <p class="text-center font-bold">Date: ${now}</p>
   `;
   document.getElementById('donation-history').appendChild(historyEntry);

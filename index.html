@@ -126,7 +126,8 @@
             <div class="col-span-1 space-y-4">
               <div class="p-2 rounded-md w-36 bg-slate-200">
                 <div class="flex space-x-3">
-                  <img src="assets/coin.png" alt="" /><span>10200</span
+                  <img src="assets/coin.png" alt="" /><span id="feni"
+                    >10200</span
                   ><span>BDT</span>
                 </div>
               </div>
@@ -143,12 +144,14 @@
               </p>
               <label class="form-control w-full">
                 <input
+                  id="input-field-card-2"
                   type="number"
                   placeholder="Write Donation Amount"
                   class="input input-bordered w-full"
                 />
               </label>
               <button
+                id="input-card-2"
                 onclick="my_modal_2.showModal()"
                 class="btn bg-primary w-full"
               >
@@ -236,4 +239,5 @@
     </main>
   </body>
   <script src="app.js"></script>
+  <script src="app2.js"></script>
 </html>
