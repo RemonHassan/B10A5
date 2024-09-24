@@ -14,24 +14,28 @@ function showBtn2(){
    showDonation.classList.add('hidden');
    historyShow.classList.remove('hidden');
 }
-// common function
+// common function start
 function addTwoNumbers(num1, num2) {
    return num1 + num2;
  }
 function negTwoNumbers(num1, num2) {
    return num1 - num2;
  }
-
-
+// common function ends
+// *****noakhali**********
 document.getElementById('input-card-1').addEventListener('click',function(){
    const inputField1 = parseFloat(document.getElementById('input-field-card-1').value);
    const mainBalance = parseFloat(document.getElementById('main-balance').innerText);
    const noakhaliMoney = parseFloat(document.getElementById('noakhali').innerText);
+   if(isNaN(inputField1)){
+      return  alert("Please enter a valid amount")
+     }
    if(inputField1 > mainBalance){
       alert('Not Enough Balance');
       return ;
    }
    else{
+      document.getElementById("my_modal_1").click()
       const newBalance = negTwoNumbers(mainBalance, inputField1) ;
       document.getElementById('main-balance').innerText = newBalance;
       const noakhaliBalance = addTwoNumbers(noakhaliMoney,inputField1);
@@ -57,11 +61,15 @@ document.getElementById('input-card-2').addEventListener('click',function(){
    const  inputField22 = parseFloat(document.getElementById('input-field-card-2').value);
    const mainBalance = parseFloat(document.getElementById('main-balance').innerText);
    const feniMoney = parseFloat(document.getElementById('feni').innerText);
-   if( inputField22 > mainBalance){
+   if(isNaN(inputField22)){
+    return  alert("Please enter a valid amount")
+   }
+   if( inputField22 > mainBalance ){
       alert('Not Enough Balance');
       return ;
    }
    else{
+      document.getElementById("my_modal_2").click()
       const newBalance = negTwoNumbers(mainBalance, inputField22);
       document.getElementById('main-balance').innerText = newBalance;
       const feniBalance = addTwoNumbers(feniMoney, inputField22);
@@ -86,11 +94,15 @@ document.getElementById('input-card-3').addEventListener('click',function(){
    const  inputField33 = parseFloat(document.getElementById('input-field-card-3').value);
    const mainBalance = parseFloat(document.getElementById('main-balance').innerText);
    const quotaMoney = parseFloat(document.getElementById('quota').innerText);
+   if(isNaN(inputField33)){
+      return  alert("Please enter a valid amount")
+     }
    if( inputField33 > mainBalance){
       alert('Not Enough Balance');
       return ;
    }
    else{
+      document.getElementById("my_modal_3").click()
       const newBalance = negTwoNumbers(mainBalance, inputField33);
       document.getElementById('main-balance').innerText = newBalance;
       const quotaBalance = addTwoNumbers(quotaMoney, inputField33);
