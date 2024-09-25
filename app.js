@@ -30,12 +30,12 @@ document.getElementById('input-card-1').addEventListener('click',function(){
    if(isNaN(inputField1)){
       return  alert("Please enter a valid amount")
      }
-   if(inputField1 > mainBalance){
+   if(inputField1 > mainBalance || inputField1 < 0){
       alert('Not Enough Balance');
       return ;
    }
    else{
-      document.getElementById("my_modal_1").click()
+      document.getElementById("my_modal_1").showModal()
       const newBalance = negTwoNumbers(mainBalance, inputField1) ;
       document.getElementById('main-balance').innerText = newBalance;
       const noakhaliBalance = addTwoNumbers(noakhaliMoney,inputField1);
@@ -64,12 +64,12 @@ document.getElementById('input-card-2').addEventListener('click',function(){
    if(isNaN(inputField22)){
     return  alert("Please enter a valid amount")
    }
-   if( inputField22 > mainBalance ){
+   if( inputField22 > mainBalance || inputField22 < 0 ){
       alert('Not Enough Balance');
       return ;
    }
    else{
-      document.getElementById("my_modal_2").click()
+      document.getElementById("my_modal_2").showModal()
       const newBalance = negTwoNumbers(mainBalance, inputField22);
       document.getElementById('main-balance').innerText = newBalance;
       const feniBalance = addTwoNumbers(feniMoney, inputField22);
@@ -97,12 +97,12 @@ document.getElementById('input-card-3').addEventListener('click',function(){
    if(isNaN(inputField33)){
       return  alert("Please enter a valid amount")
      }
-   if( inputField33 > mainBalance){
+   if( inputField33 > mainBalance || inputField33 < 0){
       alert('Not Enough Balance');
       return ;
    }
    else{
-      document.getElementById("my_modal_3").click()
+      document.getElementById("my_modal_3").showModal()
       const newBalance = negTwoNumbers(mainBalance, inputField33);
       document.getElementById('main-balance').innerText = newBalance;
       const quotaBalance = addTwoNumbers(quotaMoney, inputField33);
